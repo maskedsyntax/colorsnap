@@ -1,2 +1,2 @@
 # ColorSnap
-A python based clone for chrome/firefox extension ColorZilla
+Interactive color picker and identifier built with C++ and OpenCV.
