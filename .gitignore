@@ -1,0 +1,58 @@
+# Build outputs
+*.o
+*.obj
+*.so
+*.so.*
+*.dylib
+*.dll
+*.a
+*.lib
+*.exe
+*.out
+*.app
+*.i*
+*.ii
+*.pch
+*.pdb
+*.mod
+*.smod
+*.dSYM/
+*.stackdump
+
+# Build directories
+/build/
+bin/
+lib/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# IDE files
+.vscode/
+.idea/
+*.suo
+*.user
+*.userossc
+*.userprefs
+*.VC.db
+*.VC.opendb
+
+# OS-specific
+.DS_Store
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+# Logs
+*.log
+
+# Other
+*.swp
+*.tmp
+*.bak
+*.old
+
+
+csv
+main
