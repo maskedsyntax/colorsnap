@@ -1,6 +1,6 @@
-#include <fmt/core.h>
 #include "utils/csv_file_reader.h"
 #include "utils/rgb2hex.h"
+#include <fmt/core.h>
 #include <iostream>
 #include <opencv2/opencv.hpp>
 #include <vector>
