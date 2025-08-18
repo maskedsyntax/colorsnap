@@ -1,0 +1,8 @@
+BasedOnStyle: LLVM
+IndentWidth: 4
+BreakBeforeBraces: Allman
+ColumnLimit: 100
+BraceWrapping:
+  AfterFunction: true
+  AfterLambda: true
+  BeforeLambdaBody: true
