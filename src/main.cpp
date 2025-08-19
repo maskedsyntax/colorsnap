@@ -55,13 +55,32 @@ std::pair<std::string, int> getColor(const RGB &rgb, std::vector<ColorEntry> &da
     return std::make_pair(found, minDist);
 }
 
-int main()
+int main(int argc, char *argv[])
 {
-    std::string image_path = "assets/images/colorpic.jpg";
+    std::string image_path; // = "assets/images/colorpic.jpg";
+
+    for (int i = 1; i < argc; ++i)
+    {
+        std::string arg = argv[i];
+
+        if ((arg == "-i" || arg == "--image") && i + 1 < argc)
+        {
+            image_path = argv[i + 1];
+            i++; // skip next since it's the value
+        }
+    }
+
+    if (image_path.empty())
+    {
+        std::cerr << "Usage: " << argv[0] << " -i <image_path>\n";
+        return 1;
+    }
+
     cv::Mat img = cv::imread(image_path, cv::IMREAD_COLOR);
 
     if (img.empty())
     {
+        std::cerr << "Error: No image found.\n";
         return -1;
     }
 
